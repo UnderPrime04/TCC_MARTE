@@ -1,0 +1,42 @@
+<div class="fundo">
+    <div class="nav">
+        <img src="..\assets\m_arte.png" width="100px" height="100px">
+        <a class="comp" href="#">
+            Inscrever-se | Entrar
+        </a>
+    </div>
+    <div class="espaco-login">
+        <h1 class="Text1">Faça seu cadastro</h1>
+        <h1 class="Text2">Tipo de cadastro:</h1>
+        <label>
+          <input type="radio" name="tipo-cadastro" value="pessoa-fisica" (click)="mostrarComponentes('pessoa-fisica')"> Pessoa Física
+        </label>
+        <label>
+          <input type="radio" name="tipo-cadastro" value="pessoa-juridica" (click)="mostrarComponentes('pessoa-juridica')"> Pessoa Jurídica
+        </label>
+        <div id="componentes-pessoas-fisica" style="display: none;">
+            <h1 class="Text3">Insira seu nome completo:</h1>
+            <input type="text" class="inserir-nome" placeholder="">
+            <h1 class="Text4">Insira seu email:</h1>
+            <input type="text" class="inserir-email" placeholder="">
+            <h1 class="Text5">Insira seu CPF:</h1>
+            <input type="text" class="inserir-cpf" placeholder="">
+            <h1 class="Text6">Insira seu número:</h1>
+            <input type="text" class="inserir-numero" placeholder="">
+            <button class="button"><span class="arrow">→</span></button>
+        </div>
+        <div id="componentes-pessoas-juridica" style="display: none;">
+            <h1 class="Text7">Insira seu nome completo:</h1>
+            <input type="text" class="inserir-nome" placeholder="">
+            <h1 class="Text8">Insira seu email:</h1>
+            <input type="text" class="inserir-email" placeholder="">
+            <h1 class="Text9">Insira seu CNPJ:</h1>
+            <input type="text" class="inserir-cnpj" placeholder="">
+            <h1 class="Text10">Insira seu CEP:</h1>
+            <input type="text" class="inserir-cep" placeholder="">
+            <button class="button"><span class="arrow">→</span></button>
+        </div>
+    </div>
+</div>
+
+    

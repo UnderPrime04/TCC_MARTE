@@ -1,0 +1,124 @@
+.fundo {
+    background-color: #1BAAE0;
+    top: 0%;
+    width: 100%;
+    height: 100vh;
+    margin-left: -20px;
+    position: fixed;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    padding: 0 16px;
+    align-items: center;
+    height: 100px;
+    font: 500 20px/32px Roboto, "Helvetica Neue", sans-serif;
+}
+
+.nav img{
+    margin-left: 40px;
+}
+
+.comp {
+    margin-left: 980px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.text1{
+    font-family: "Raleway", sans-serif;
+    position: absolute; /* Altere para absolute para posicionar no canto esquerdo */
+    top: 70px; /* Ajuste a posição vertical conforme necessário */
+    left: 90px; /* Posiciona o texto no canto esquerdo */
+    font-size: 95px; /* Aumenta o tamanho da fonte */
+    line-height: 1.2; /* Define o espaçamento entre as linhas */
+    color:#ffffff;
+}
+
+.text2{
+    font-family: "Raleway", sans-serif;
+    position: absolute; /* Altere para absolute para posicionar no canto esquerdo */
+    top: 380px; /* Ajuste a posição vertical conforme necessário */
+    left: 90px; /* Posiciona o texto no canto esquerdo */
+    font-size: 15px; /* Aumenta o tamanho da fonte */
+    line-height: 1.2; /* Define o espaçamento entre as linhas */
+    color:#000000;
+}
+
+.button {
+    position: absolute;
+    top: 480px; /* Ajuste a posição vertical conforme necessário */
+    left: 90px; /* Posiciona o botão no canto esquerdo */
+    padding: 10px 20px;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 30px; /* Torna o botão arredondado */
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.button:hover {
+    box-shadow: 0 8px 16px #ffffff; ; /* Adicione sombra ao passar o cursor para dar feedback visual */
+    background-color: #ffffff;
+    color: #000000;
+  }
+
+
+  .carousel-container {
+    display: flex;
+    justify-content: flex-end; /* Alinha as imagens à direita */
+    align-items: center;
+    height: 600px; /* Defina a altura desejada */
+    left: -100px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .carousel {
+    display: flex;
+  }
+  
+  .carousel img {
+    width: 80px; /* Defina o tamanho das imagens */
+    height: auto;
+    animation: rotate 15s linear infinite; /* Aplica a animação de rotação */
+    box-shadow: 0 6px 8px rgb(0, 0, 0); /* Adiciona a sombra */
+  }
+  .carousel img:nth-child(2) {
+    margin-top: -40px; /* Ajuste o valor conforme necessário */
+  }
+
+  .carousel img:nth-child(1) {
+    animation-duration: 10s; /* Ajuste a duração conforme necessário */
+  }
+  
+  .carousel img:nth-child(2) {
+    animation-duration: 15s; /* Ajuste a duração conforme necessário */
+  }
+  
+  .carousel img:nth-child(3) {
+    animation-duration: 10s; /* Ajuste a duração conforme necessário */
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotateY(0);
+    }
+    33% {
+      transform: rotateY(120deg);
+    }
+    66% {
+      transform: rotateY(240deg);
+    }
+    100% {
+      transform: rotateY(360deg);
+    }
+  }

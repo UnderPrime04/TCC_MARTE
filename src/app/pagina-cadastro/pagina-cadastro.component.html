@@ -15,25 +15,131 @@
           <input type="radio" name="tipo-cadastro" value="pessoa-juridica" (click)="mostrarComponentes('pessoa-juridica')"> Pessoa Jurídica
         </label>
         <div id="componentes-pessoas-fisica" style="display: none;">
-            <h1 class="Text3">Insira seu nome completo:</h1>
-            <input type="text" class="inserir-nome" placeholder="">
-            <h1 class="Text4">Insira seu email:</h1>
-            <input type="text" class="inserir-email" placeholder="">
-            <h1 class="Text5">Insira seu CPF:</h1>
-            <input type="text" class="inserir-cpf" placeholder="">
-            <h1 class="Text6">Insira seu número:</h1>
-            <input type="text" class="inserir-numero" placeholder="">
+            <table class="input-table">
+                <label class="escolha-opcao" style="color: rgb(0, 0, 0);">Selecione sua função:&nbsp;</label>
+                <select id="escolha-opcao">
+                    <option value="opcao1">Cantor</option>
+                    <option value="opcao2">Músico</option>
+                    <option value="opcao3">Dançarino</option>
+                    <!-- Adicione mais opções, se necessário -->
+                </select>
+                <tr>
+                    <td>
+                        <h1 class="Text3nome">Insira seu nome completo:</h1>
+                    </td>
+                    <td>
+                        <h1 class="Text4email">Insira seu email:</h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" class="inserir-nome" placeholder="">
+                    </td>
+                    <td>
+                        <input type="text" class="inserir-email" placeholder="">
+                    </td>
+                </tr>
+            </table>   
+            <table class="input-table2">
+                <tr>
+                    <td>
+                        <h1 class="Text5CPF">Insira seu CPF:</h1>
+                    </td>
+                    <td>
+                        <h1 class="Text6numero">Insira seu numero:</h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" class="inserir-cpf" placeholder="">
+                    </td>
+                    <td>
+                        <input type="text" class="inserir-numero" placeholder="">
+                    </td>
+                </tr>
+            </table> 
+            <table class="input-table3">
+                <tr>
+                    <td>
+                        <h1 class="Text7senha">Crie uma senha:</h1>
+                    </td>
+                    <td>
+                        <h1 class="Text8csenha">Confirme sua senha:</h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" class="inserir-senha" placeholder="">
+                    </td>
+                    <td>
+                        <input type="text" class="inserir-csenha" placeholder="">
+                    </td>
+                </tr>
+            </table>
             <button class="button"><span class="arrow">→</span></button>
         </div>
         <div id="componentes-pessoas-juridica" style="display: none;">
-            <h1 class="Text7">Insira seu nome completo:</h1>
-            <input type="text" class="inserir-nome" placeholder="">
-            <h1 class="Text8">Insira seu email:</h1>
-            <input type="text" class="inserir-email" placeholder="">
-            <h1 class="Text9">Insira seu CNPJ:</h1>
-            <input type="text" class="inserir-cnpj" placeholder="">
-            <h1 class="Text10">Insira seu CEP:</h1>
-            <input type="text" class="inserir-cep" placeholder="">
+           <table class="input-table">
+            <label class="escolha-opcao" style="color: rgb(0, 0, 0);">Selecione seu negócio:&nbsp;</label>
+                <select id="escolha-opcao">
+                    <option value="opcao1">Estabelecimento</option>
+                    <option value="opcao2">Casa de Show</option>
+                    <option value="opcao3">Outro</option>
+                        <!-- Adicione mais opções, se necessário -->
+                </select>
+                <tr>
+                    <td>
+                        <h1 class="Text3nome">Insira seu nome completo:</h1>
+                    </td>
+                    <td>
+                        <h1 class="Text4email">Insira seu email:</h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" class="inserir-nome" placeholder="">
+                    </td>
+                    <td>
+                        <input type="text" class="inserir-email" placeholder="">
+                    </td>
+                </tr>
+            </table>   
+            <table class="input-table2">
+                <tr>
+                    <td>
+                        <h1 class="Text9CNPJ">Insira seu CNPJ:</h1>
+                    </td>
+                    <td>
+                        <h1 class="Text10CEP">Insira seu CEP:</h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" class="inserir-cnpj" placeholder="">
+                    </td>
+                    <td>
+                        <input type="text" class="inserir-cep" placeholder="">
+                    </td>
+                </tr>
+            </table> 
+            <table class="input-table3">
+                <tr>
+                    <td>
+                        <h1 class="Text7senha">Crie uma senha:</h1>
+                    </td>
+                    <td>
+                        <h1 class="Text8csenha">Confirme sua senha:</h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" class="inserir-senha" placeholder="">
+                    </td>
+                    <td>
+                        <input type="text" class="inserir-csenha" placeholder="">
+                    </td>
+                </tr>
+            </table>            
             <button class="button"><span class="arrow">→</span></button>
         </div>
     </div>
